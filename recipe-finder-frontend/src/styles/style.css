@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@media (max-width: 768px) {
+  .favoritesList {
+    justify-content: center;
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .recipeCard {
+    width: calc(50% - 10px); /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .favoritesList {
+    justify-content: center;
+    gap: 5px; /* Smaller gap for mobile devices */
+  }
+
+  .recipeCard {
+    width: calc(100% - 5px); /* Adjust for mobile screens */
+  }
+}
+
+.homepage {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+/* Styling for individual card */
+.recipe-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Card image */
+.recipe-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Card content */
+.recipe-card-content {
+  padding: 10px;
+}
+
+/* Recipe title */
+.recipe-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Recipe description */
+.recipe-card-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Recipe link */
+.recipe-card-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.recipe-card-link:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect for the card */
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
